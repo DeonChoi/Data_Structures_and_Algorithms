@@ -36,3 +36,21 @@ test_val2 = 15
 print(binary_search(test_list, 29))
 #returns 4
 #print(binary_search(test_list, test_val2))
+
+#recursive
+def binary_search_r(arr,value):
+    if len(arr) == 0 or (len(arr) == 1 and arr[0] != value):
+        return False
+
+    mid = arr[len(arr) // 2]
+
+    if value == mid: 
+        return True
+    elif value < mid:  
+        return binary_search_r(arr[:len(arr) // 2], value)
+    elif value > mid:  
+        return binary_search_r(arr[len(arr) // 2+1:], value)
+
+
+arr = [1,3,9,11,15,19,29]
+print(binary_search_r(arr, 19))
