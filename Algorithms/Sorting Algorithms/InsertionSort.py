@@ -1,10 +1,3 @@
-
-#create random arrays for testing Insertion Sort method
-def create_array(size = 10, max = 50):
-    from random import randint
-    return [randint(0, max) for _ in range(size)]
-
-
 def insertion_sort(arr):
     for sort_len in range(1, len(arr)):
         cur_item = arr[sort_len] #next unsorted item
@@ -19,7 +12,6 @@ def insertion_sort(arr):
         arr[insert_idx] = cur_item
     return arr
 
-new_arr = create_array()
-print(new_arr)
-new_arr = insertion_sort(new_arr)
-print(new_arr)
+alist = [54,26,93,17,77,31,44,55,20]
+insertion_sort(alist)
+print(alist)
