@@ -1,5 +1,5 @@
 def selectionSort(arr):
-    # Traverse through all array elements 
+    # Traverse through all array elements to find minimum value in each iteration
     for i in range(len(arr)): 
         
         # Find the minimum element in remaining unsorted array 
