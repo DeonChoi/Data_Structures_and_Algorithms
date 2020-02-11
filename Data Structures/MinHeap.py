@@ -1,6 +1,6 @@
 class MinHeap:
   def __init__(self):
-    self.heap_list = [None]
+    self.heap_list = [0]
     self.count = 0
 
   def parent_idx(self, idx):
